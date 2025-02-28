@@ -47,8 +47,8 @@ type (
 		Issuer    string        `mapstructure:"issuer" validate:"required"`
 	}
 	Database struct {
-		Host     string `mapstructure:"secret" validate:"required"`
-		Port     int    `mapstructure:"port" validate:"required"`
+		Host     string `mapstructure:"host" validate:"required"`
+		Port     string `mapstructure:"port" validate:"required"`
 		User     string `mapstructure:"user" validate:"required"`
 		Password string `mapstructure:"password" validate:"required"`
 		DBname   string `mapstructure:"dbname" validate:"required"`
