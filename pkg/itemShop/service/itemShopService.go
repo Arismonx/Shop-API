@@ -1,3 +1,9 @@
 package service
 
-type ItemShopService interface{}
+import (
+	_itemShopModel "github.com/Arismonx/shop-api/pkg/itemShop/model"
+)
+
+type ItemShopService interface {
+	Listing() ([]*_itemShopModel.Item, error)
+}
